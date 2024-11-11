@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Happiness Score Prediction</title>
+</head>
+<body>
+    <h2>Predict Happiness Score</h2>
+    <form action="/predict" method="post">
+        <label for="feature1">Happiness Rank:</label><br>
+        <input type="number" step="1" name="feature1" required><br>
+        
+        <label for="feature2">Standard Error:</label><br>
+        <input type="number" step="0.01" name="feature2" required><br>
+        
+        <label for="feature3">Economy (GDP per Capita):</label><br>
+        <input type="number" step="0.01" name="feature3" required><br>
+        
+        <label for="feature4">Family:</label><br>
+        <input type="number" step="0.01" name="feature4" required><br>
+        
+        <label for="feature5">Health (Life Expectancy):</label><br>
+        <input type="number" step="0.01" name="feature5" required><br>
+        
+        <label for="feature6">Freedom:</label><br>
+        <input type="number" step="0.01" name="feature6" required><br>
+        
+        <label for="feature7">Trust (Government Corruption):</label><br>
+        <input type="number" step="0.01" name="feature7" required><br>
+        
+        <label for="feature8">Generosity:</label><br>
+        <input type="number" step="0.01" name="feature8" required><br>
+        
+        <label for="feature9">Dystopia Residual:</label><br>
+        <input type="number" step="0.01" name="feature9" required><br><br>
+        
+        <input type="submit" value="Predict">
+    </form>
+</body>
+</html>
